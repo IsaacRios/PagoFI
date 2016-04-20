@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>PagoFI</title>
+  <meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta name="keywords" content="Facturación, Ecommerce, online, compra, pago">
+		<meta name="description" content="Pago online de facturación electrónica, Factura Inteligente">
+		<meta name = "author" content="Isaac Pérez Ríos">
+		<meta name="owner" content="Factura Inteligente">
+		<meta name="robots" content="Factura Inteligente, factura, facturación">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/simplex/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>			
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" height="25px"></a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">		
+			        <li><a href="#section2" class="btn">1 Producto <i class="fa fa-cart-arrow-down"></i></a></li>	
+			        <li><a href="#section3" class="btn">2 Registro de datos <i class="fa fa-check-square-o"></i></a></li>
+			        <li><a href="#"></a></li>
+			        <li><a href="#section4" class="btn">3 Pago online <i class="fa fa-credit-card-alt"></i></a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>			
+		</header>
+
+<%= yield %>
+
+</body>
+</html>
