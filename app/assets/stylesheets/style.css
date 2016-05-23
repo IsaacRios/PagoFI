@@ -69,6 +69,10 @@ font-size: 12px;
 	padding-right: 15%;
 	padding-bottom: 10%
 	min-width: 450px;
+	background-image: url("mapa.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	background-position: center ;
 }
 @media only screen and (max-width: 767px) {
 #section3{
@@ -81,16 +85,13 @@ font-size: 12px;
 .formz{
 	max-width: 250px;
 }
-
 #section4{
 	background-color: #ECE2D0;
 	min-width: 450px;
 	padding-top: 5px;
-	padding-bottom: 7px;
-	
+	padding-bottom: 7px;	
 }
 .section4{
-	background-color:#CC8B86;
 	min-width: 400px;
 	padding-top: 10%;
 	padding-bottom: 10%;
@@ -99,11 +100,11 @@ font-size: 12px;
 	margin-left: 5px;
 	margin-right: 5px;
 	background-size: 300px;
-	background-image: url("mapa.png");
+	background-image: url("fondodos.jpg");
 	background-repeat: no-repeat;
-	background-attachment: fixed;	
-	background-position: center ;
-
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
 }
 footer{
 	
@@ -165,9 +166,6 @@ footer{
 	padding-right: 5%;
 	text-align: center;
 }
-#fpago{
-
-}
 .caja1{
 color: white;
 border: 3px;
@@ -179,8 +177,8 @@ padding-top: 3%;
 padding-bottom: 3%;
 }
 .cajapic{
-opacity: 0.4;
-filter: alpha(opacity=40);
+opacity: 0.3;
+filter: alpha(opacity=30);
 width: 80%;
 }
 .pabajo{
@@ -209,14 +207,18 @@ width: 80%;
 	color:white;
 }
 .buton4{
-	background-color: #010066;
-	color: white;
-}
-.buton5{
 	background-color: #da251d;
 	color: white;
 }
-.buton6{
+.buton5{
 	background-color: #919098;
-	color: black;
+	color: white;
+}
+.buton6{
+	background-color: #010066;
+	color: white;
+}
+.buton7{
+	background-color: #95be46;
+	color: white;
 }

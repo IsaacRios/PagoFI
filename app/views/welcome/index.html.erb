@@ -142,12 +142,12 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<form action="" class="form-horizontal">							
-							<label for="focusedInput" class="control-label">RFC</label>							
-							<div class="input-group margin-bottom-sm">							
+							<label for="focusedInput" class="control-label text-info"><strong>RFC</strong></label>							
+							<div class="input-group margin-bottom-sm">						
   								<span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
   							<input class="form-control formz" type="text" placeholder="XAXX010101000">
 							</div>
-							<label for="focusedInput" class="control-label">Confirmar RFC</label>							
+							<label for="focusedInput" class="control-label text-info"><strong>Confirmar RFC</strong></label>								
 							<div class="input-group margin-bottom-sm">							
   								<span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
   							<input class="form-control formz" type="text" placeholder="XAXX010101000">
@@ -156,12 +156,12 @@
 					</div>
 					<div class="col-sm-4">
 						<form action="" class="form-horizontal">							
-							<label for="focusedInput" class="control-label">Nombre o razón social</label>							
+							<label for="focusedInput" class="control-label text-info"><strong>Nombre o razón social</strong></label>								
 							<div class="input-group margin-bottom-sm">							
   								<span class="input-group-addon"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i></span>
   							<input class="form-control formz" type="text" placeholder="Nombre Apellido">
 							</div>
-							<label for="focusedInput" class="control-label">Correo Electrónico</label>							
+							<label for="focusedInput" class="control-label text-info"><strong>Correo Electrónico</strong></label>							
 							<div class="input-group margin-bottom-sm">							
   								<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
   							<input class="form-control formz" type="text" placeholder="ejemplo@micorreo.com">
@@ -169,12 +169,11 @@
 						</form>
 					</div>
 					<div class="col-sm-4">
-						<form action="" class="form-horizontal">							
-							
-							<label for="focusedInput" class="control-label">clave de distribuidor</label>							
+						<form action="" class="form-horizontal">					
+							<label for="focusedInput" class="control-label text-success"><strong>clave de distribuidor</strong></label>
 							<div class="input-group margin-bottom-sm">							
   								<span class="input-group-addon"><i class="fa fa-exclamation-triangle fa-fw" aria-hidden="true"></i></span>
-  							<input class="form-control formz" type="text" placeholder="FI-D000000">  							
+  							<input class="form-control formz" type="text" placeholder="FI-D0000XX">  							
 							</div>
 							<p class="text-danger"><br>*Clave FI llenar sólo si recibió atención por parte de uno de nuestros distribuidores autorizados.</p>				
 						</form>						
@@ -191,80 +190,150 @@
 					<h2><span class="badge">3/3</span> Elije tu forma de pago</h2>
 				</div>				
 				<ul class="nav nav-tabs">
-				  <li class="btn"><a href="#pago1" data-toggle="tab" aria-expanded="false" class="buton1"><i class="fa fa-paypal fa-2x"></i> Paypal </a></li>
-				  <li class="btn active"><a href="#pago2" data-toggle="tab" aria-expanded="true" class="buton2"><i class="fa fa-ticket fa-2x"></i> Depósito referenciado</a></li>		 
-				  <li class="btn dropdown">
-				    <a class="dropdown-toggle buton3" data-toggle="dropdown" href="#" aria-expanded="false">
-				      <i class="fa fa-credit-card fa-2x"></i> Tarjeta <span class="caret"></span>
-				    </a>
-				    <ul class="dropdown-menu">
-				      <li><a href="#pago3a" data-toggle="tab">Crédito</a></li>
-				      <li class="divider"></li>
-				      <li><a href="#pago3b" data-toggle="tab">Débito</a></li>
-				    </ul>
-				  </li>
-				  <li class="btn"><a href="#pago4" data-toggle="tab" aria-expanded="false" class="buton4"> <i class="fa fa-mobile fa-2x"></i> Transferencia interbancaria</a></li>				
-				  <li class="btn"><a href="#pago5" data-toggle="tab" aria-expanded="false" class="buton5"><i class="fa fa-money fa-2x"></i> OXXO</a></li>
-				  <li class="btn"><a href="#pago6" data-toggle="tab" aria-expanded="false" class="buton6"><i class="fa fa-cc-mastercard fa-2x"></i> Meses sin intereses*</a></li>
+				  <li class="btn active"><a href="#pago1" data-toggle="tab" aria-expanded="true" class="buton1 btn-sm">Depósito referenciado <i class="fa fa-ticket fa-2x"></i></a></li>		 
+				  <li class="btn"><a href="#pago2" data-toggle="tab" aria-expanded="false" class="buton2"><i class="fa fa-credit-card fa-2x"></i> Tarjetas</a></li>
+				  <li class="btn"><a href="#pago3" data-toggle="tab" aria-expanded="false" class="buton3"><i class="fa fa-mobile fa-2x"></i> Transferencia interbancaria</a></li>				
+				  <li class="btn"><a href="#pago4" data-toggle="tab" aria-expanded="false" class="buton4"><i class="fa fa-money fa-2x"></i> OXXO</a></li>
+				  <li class="btn"><a href="#pago5" data-toggle="tab" aria-expanded="false" class="buton5"><i class="fa fa-cc-mastercard fa-2x"></i> Meses sin intereses*</a></li>
+				  <li class="btn"><a href="#pago6" data-toggle="tab" aria-expanded="false" class="buton6"><i class="fa fa-paypal fa-2x"></i> Paypal </a></li>
+				  <!-- 
+				  <li class="btn"><a href="#pago7" data-toggle="tab" aria-expanded="false" class="buton7"><i class="fa fa-shopping-bag fa-2x"></i> Shopify</a></li> -->
 				</ul>
 				<div id="myTabContent" class="tab-content">
-				  <div class="tab-pane fade" id="pago1">
-				    <p class="pagos">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-				    <hr>
-				    <div class="cajapic">
-				    	<i class="fa fa-cc-paypal fa-4x negro"></i>	
-				    </div>				    			    
-				  </div>
-				  <div class="tab-pane fade active in" id="pago2">
-				  	<article>
+				  <div class="tab-pane fade active in" id="pago1">
+				  <article>
+				   <h3 class="well">Depósito con referencia bancaria.</h3>
 				  	<div class="pagos">
 				  		<p>Para utilizar éste método de pago, siga las instrucciones: </p>
 				    <ol>
 				    	<li>Usted recibirá un correo electrónico con los datos necesarios para realizar el pago de su compra.</li>
 				    	<li>Al momento de realizar el depósito referenciado en la ventanilla asegúrese de que el cajero anote el número de referencia de pago, pues será el móvil de identificación.<br>
 				    	<strong>*El número de referencia es generado automáticamente en cada producto por compra, no reutilizarlo.</strong><br>
-				    	<span class="text-danger">Enviar la captura de la imagen de su comprobante de pago al correo <strong>activaciones@facturainteligente.com</strong></span></li>
+				    	<span class="text-primary">Enviar la captura de la imagen de su comprobante de pago al correo <strong>activaciones@facturainteligente.com</strong></span></li>
 						<li>Una vez realizado el depósito, su cuenta se activará automáticamente en un tiempo máximo de 24 hrs. Usted recibirá un correo electrónico de confirmación con los pasos para completar su registro en línea.</li>
 				    </ol>
 				  	</div>				  	
 				  	</article>				    
 				    <div class="cajapic">
-				    	<img src="images/ref.png" alt="Referencia" class="img-responsive">
-				    </div>				   
+				    	<img src="/assets/ref.png" alt="Referencia" class="img-responsive">
+				    </div>				   			    			    
 				  </div>
-				  <div class="tab-pane fade" id="pago3a">
-				    <p class="pagos">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+				  <div class="tab-pane fade" id="pago2">
+				  	 <h3 class="well">Tarjetas de débito y crédito.</h3>
+				  	 <h2>Para su total seguridad es necesarío completar la siguiente información</h2>
+<%= form_tag('/charges/create', id: 'card-form') do %>
+  <span class="card-errors"></span>
+  <div class="form-row">
+    <label>
+      <span class="pagos">Nombre del tarjetahabiente</span>
+      <input class="form-control" type="text" size="20" data-conekta="card[name]"/>
+    </label>
+  </div>
+  <div class="form-row">
+    <label>
+      <span class="pagos">Número de tarjeta de crédito</span>
+      <input class="form-control" type="text" size="20" data-conekta="card[number]"/>
+    </label>
+  </div>
+  <div class="form-row">
+    <label>
+      <span class="pagos">CVC</span>
+      <input class="form-control" type="text" size="4" data-conekta="card[cvc]"/>
+    </label>
+  </div>
+  <div class="form-row">
+    <label>
+      <span class="pagos">Fecha de expiración (MM/AAAA)</span>
+      <input type="text" size="2" data-conekta="card[exp_month]"/>
+    </label>
+    <span>/</span>
+    <input type="text" size="4" data-conekta="card[exp_year]"/>
+  </div>
+<!-- Información recomendada para sistema antifraude -->
+  <div class="form-row">
+    <label>
+      <span class="pagos">Calle</span>
+      <input class="form-control" type="text" size="25" data-conekta="card[address][street1]"/>
+    </label>
+  </div>
+<div class="form-row">
+    <label>
+      <span class="pagos">Colonia</span>
+      <input class="form-control" type="text" size="25" data-conekta="card[address][street2]"/>
+    </label>
+  </div>
+<div class="form-row">
+    <label>
+      <span class="pagos">Ciudad</span>
+      <input class="form-control" type="text" size="25" data-conekta="card[address][city]"/>
+    </label>
+  </div>
+<div class="form-row">
+    <label>
+      <span class="pagos">Estado</span>
+      <input class="form-control" type="text" size="25" data-conekta="card[address][state]"/>
+    </label>
+  </div>
+<div class="form-row">
+    <label>
+      <span class="pagos">CP</span>
+      <input class="form-control" type="text" size="5" data-conekta="card[address][zip]"/>
+    </label>
+  </div>
+<div class="form-row">
+    <label>
+      <span class="pagos">País</span>
+      <input class="form-control" type="text" size="25" data-conekta="card[address][country]"/>
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary" type="submit">¡Pagar ahora!</button>
+  <% end %>
 				    <div class="cajapic">
-				    	<img src="images/tcredito.png" alt="Crédito" class="img-responsive">
-				    </div>				  	
+				    	<img src="/assets/tcredito.png" alt="Crédito" class="img-responsive">
+				    </div>				  					   
 				  </div>
-
-				  <div class="tab-pane fade" id="pago3b">
-				    <p class="pagos">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+				  <div class="tab-pane fade" id="pago3">
+				   <h3 class="well">Transferencia interbancaria.</h3>			    
 				    <div class="cajapic">
-				    	<img src="images/tdebito.png" alt="Débito" class="img-responsive">
-				    </div>				  	
+				    	<img src="/assets/transfer.png" alt="transfer" class="img-responsive">	
+				    </div>				   				  	
 				  </div>
 				  <div class="tab-pane fade" id="pago4">
-				    <p class="pagos">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>				    
+				   <h3 class="well">Pago en efectivo en tiendas OXXO.</h3>
+				    <ol class="pagos">
+				    	<li>Imprime tu código</li>
+				    	<li>Ve a cualquier tienda OXXO</li>
+				    	<li>Haz tu pago en efectivo usando tu código</li>
+				    	<li>Espera tu orden una vez que Oxxo nos confirme tu pago</li>
+				    	<li>Recuerda: Tu código tiene un validez de 48 horas</li>
+				    </ol>
 				    <div class="cajapic">
-				    	<img src="images/transfer.png" alt="transfer" class="img-responsive">	
-				    </div>				  	
+				    	<img src="/assets/efectivo.png" alt="oxxo" class="img-responsive">
+				    </div>				    			  	
 				  </div>
 				  <div class="tab-pane fade" id="pago5">
-				    <p class="pagos">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-				    <div class="cajapic">
-				    	<img src="images/efectivo.png" alt="oxxo" class="img-responsive">
-				    </div>				    
-				  </div>
-				  <div class="tab-pane fade" id="pago6">
-				    <p class="pagos">
+				   <h3 class="well">Cargo a tarjeta con meses sin intereses</h3>
+				  <p class="pagos">
 				    * Meses Sin Intereses para tarjetas VISA y MasterCard está disponible para pagos parciales en 3, 6 y 12 mensualidades<br>
 					* Las tarjetas American Express permiten pagos parciales en 3, 6, 9 y 12 mensualidades.</p>
 				    <div class="cajapic">
-				    	<img src="images/meses.png" alt="meses" class="img-responsive">
+				    	<img src="/assets/meses.png" alt="meses" class="img-responsive">
 				    </div>				    
+				  </div>
+				  <div class="tab-pane fade" id="pago6">
+				   <h3 class="well">PayPal</h3>
+				   <p class="pagos">Paypal pal pal papal.</p>
+				    <hr>
+				    <div class="cajapic">
+				    	<i class="fa fa-cc-paypal fa-4x"></i>	
+				    </div>							    
 				  </div>				  
+				  <div class="tab-pane fade" id="pago7">
+				    <p class="pagos">Food truck fixie lchopifu shopify pluggin a shopify</p>
+				    <div class="cajapic">
+				    	<img src="/assets/shopify.png" alt="shopify" class="img-responsive">
+				    </div>				    
+				  </div>
 				</div>
 			</div>			
 		</section>
@@ -275,12 +344,11 @@
 					<h4 class="letracrema" title="LLamanos">01 800 288 1000 <i class="fa fa-commenting"></i></h4>
 				</hgroup>
 				<ul style="list-style-type: none">
-					<li><strong>Opción 1</strong> Ventas</li>
-					<li><strong>Opción 2</strong> Soporte técnico y activaciones</li>
-					<li><strong>Extención: 8005, 8009</strong> Atención a distribuidores</li>
+					<li><strong><small>Opción 1</small></strong> Ventas</li>
+					<li><strong><small>Opción 2</small></strong> Soporte técnico y activaciones</li>
+					<li><strong><small>Extención: 8005, 8009</small></strong> Atención a distribuidores</li>
 				</ul>
-				<img src="images/giiff.gif" alt="responsive gif" class="img-circle" width="180px" height="150px;">
+				<img src="/assets/giiff.gif" alt="responsive gif" class="img-circle" width="180px" height="150px;">
 			</div>			
 		</footer>
 </body>
-</html>
