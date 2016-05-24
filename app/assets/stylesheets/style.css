@@ -111,9 +111,9 @@ footer{
 	background-image: url("footefondo.jpg");
 	color: #ECE2D0;
 	min-width: 450px;
-	min-height: 300px;
-	padding-bottom: 5px;
+	min-height: 320px;
 	padding-top: 15px;
+	padding-bottom: 15px;
 }
 #foot{
 	color: #ECE2D0;
