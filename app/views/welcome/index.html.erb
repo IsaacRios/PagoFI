@@ -187,7 +187,7 @@
 		<section id="section4">
 			<div class="section4">
 				<div class="center-block text-center">
-					<h2><span class="badge">3/3</span> Elije tu forma de pago</h2>
+					<h2 class="negro"><span class="badge">3/3</span> Elije tu forma de pago</h2>
 				</div>				
 				<ul class="nav nav-tabs">
 				  <li class="btn active"><a href="#pago1" data-toggle="tab" aria-expanded="true" class="buton1 btn-sm">Depósito referenciado <i class="fa fa-ticket fa-2x"></i></a></li>		 
@@ -219,79 +219,90 @@
 				    </div>				   			    			    
 				  </div>
 				  <div class="tab-pane fade" id="pago2">
-				  	 <h3 class="well">Tarjetas de débito y crédito.</h3>
-				  	 <h2>Para su total seguridad es necesarío completar la siguiente información</h2>
-<%= form_tag('/charges/create', id: 'card-form') do %>
-  <span class="card-errors"></span>
-  <div class="form-row">
-    <label>
-      <span class="pagos">Nombre del tarjetahabiente</span>
-      <input class="form-control" type="text" size="20" data-conekta="card[name]"/>
-    </label>
-  </div>
-  <div class="form-row">
-    <label>
-      <span class="pagos">Número de tarjeta de crédito</span>
-      <input class="form-control" type="text" size="20" data-conekta="card[number]"/>
-    </label>
-  </div>
-  <div class="form-row">
-    <label>
-      <span class="pagos">CVC</span>
-      <input class="form-control" type="text" size="4" data-conekta="card[cvc]"/>
-    </label>
-  </div>
-  <div class="form-row">
-    <label>
-      <span class="pagos">Fecha de expiración (MM/AAAA)</span>
-      <input type="text" size="2" data-conekta="card[exp_month]"/>
-    </label>
-    <span>/</span>
-    <input type="text" size="4" data-conekta="card[exp_year]"/>
-  </div>
-<!-- Información recomendada para sistema antifraude -->
-  <div class="form-row">
-    <label>
-      <span class="pagos">Calle</span>
-      <input class="form-control" type="text" size="25" data-conekta="card[address][street1]"/>
-    </label>
-  </div>
-<div class="form-row">
-    <label>
-      <span class="pagos">Colonia</span>
-      <input class="form-control" type="text" size="25" data-conekta="card[address][street2]"/>
-    </label>
-  </div>
-<div class="form-row">
-    <label>
-      <span class="pagos">Ciudad</span>
-      <input class="form-control" type="text" size="25" data-conekta="card[address][city]"/>
-    </label>
-  </div>
-<div class="form-row">
-    <label>
-      <span class="pagos">Estado</span>
-      <input class="form-control" type="text" size="25" data-conekta="card[address][state]"/>
-    </label>
-  </div>
-<div class="form-row">
-    <label>
-      <span class="pagos">CP</span>
-      <input class="form-control" type="text" size="5" data-conekta="card[address][zip]"/>
-    </label>
-  </div>
-<div class="form-row">
-    <label>
-      <span class="pagos">País</span>
-      <input class="form-control" type="text" size="25" data-conekta="card[address][country]"/>
-    </label>
-  </div>
-  <button class="btn btn-lg btn-primary" type="submit">¡Pagar ahora!</button>
-  <% end %>
-				    <div class="cajapic">
-				    	<img src="/assets/tcredito.png" alt="Crédito" class="img-responsive">
-				    </div>				  					   
-				  </div>
+				  <h3 class="well">Tarjetas de débito y crédito.</h3>
+					<%= form_tag('/charges/create', id: 'card-form') do %>
+				  <div class="row">
+				  	<div class="col-lg-8 col-md-9 col-sm-10">
+				  		<div class="col-lg-6 col-md-6 col-sm-6">
+				  			<span class="card-errors"></span>
+							  <div class="form-row">
+							    <label>
+							      <span class="pagos"><strong>Nombre del tarjetahabiente</strong></span>
+							      <input class="form-control" type="text" size="20" data-conekta="card[name]"/>
+							    </label>
+							  </div>
+							  <div class="form-row">
+							    <label>
+							      <span class="pagos"><strong>CVC</strong></span>
+							      <input class="form-control" type="text" size="4" data-conekta="card[cvc]"/>
+							    </label>
+							  </div>
+							  <!-- Información recomendada para sistema antifraude -->
+							  <div class="form-row">
+							    <label>
+							      <span class="pagos"><strong>Calle</strong></span>
+							      <input class="form-control" type="text" size="25" data-conekta="card[address][street1]"/>
+							    </label>
+							  </div>
+							  <div class="form-row">
+							    <label>
+							      <span class="pagos"><strong>Ciudad</strong></span>
+							      <input class="form-control" type="text" size="25" data-conekta="card[address][city]"/>
+							    </label>
+							  </div>
+							  <div class="form-row">
+							    <label>
+							      <span class="pagos"><strong>CP</strong></span>
+							      <input class="form-control" type="text" size="5" data-conekta="card[address][zip]"/>
+							    </label>
+							  </div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="form-row">
+							    <label>
+							      <span class="pagos"><strong> Número de tarjeta de crédito</strong></span>
+							      <input class="form-control" type="text" size="20" data-conekta="card[number]"/>
+							    </label>
+					  		  </div>
+					  		  <div class="form-row">
+							    <label>
+							      <span class="pagos"><strong>Fecha de expiración (MM/AAAA)</strong><br></span>
+							      <input type="text" size="2" data-conekta="card[exp_month]"/>
+							      <span>/</span>
+							      <input type="text" size="4" data-conekta="card[exp_year]"/>
+							    </label>							    
+							  </div>
+							  <div class="form-row">
+							    <label>
+							      <span class="pagos"><strong>Colonia</strong></span>
+							      <input class="form-control" type="text" size="25" data-conekta="card[address][street2]"/>
+							    </label>
+							  </div>
+							  <div class="form-row">
+							    <label>
+							      <span class="pagos"><strong>Estado</strong></span>
+							      <input class="form-control" type="text" size="25" data-conekta="card[address][state]"/>
+							    </label>
+							  </div>
+							  <div class="form-row">
+							    <label>
+							      <span class="pagos"><strong>País</strong></span>
+							      <input class="form-control" type="text" size="25" data-conekta="card[address][country]"/>
+							    </label>
+							  </div>
+							  <br>
+							  <button class="btn btn-lg btn-primary" type="submit">¡Pagar ahora!</button>
+						</div>
+				  	</div>	  		
+				  	<div class="col-lg-4 col-md-3 col-sm-2">
+				  		<!-- COLUMNA VACIA-->
+				  	</div>				  	
+				</div>	<!-- Row -->					  
+					<% end %>
+					<div class="cajapic">
+		   				<img src="/assets/tcredito.png" alt="Crédito" class="img-responsive">
+		 			</div>
+				</div>				  					   
 				  <div class="tab-pane fade" id="pago3">
 				   <h3 class="well">Transferencia interbancaria.</h3>			    
 				    <div class="cajapic">
