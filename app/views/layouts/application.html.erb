@@ -2,7 +2,10 @@
 <html lang="es">
 <head>
   <title>Pago Online</title>
-  <meta charset = "utf-8">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  		<meta charset = "utf-8">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1">
 		<meta name="keywords" content="Facturación, Ecommerce, online, compra, pago">
 		<meta name="description" content="Pago online de facturación electrónica, Factura Inteligente">
@@ -14,9 +17,14 @@
 		<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+		<script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.5.0/js/conekta.js"></script>
+		<script type="text/javascript">
+ 
+ // Conekta Public Key
+  Conekta.setPublishableKey('<%= Rails.application.secrets.conekta_public %>');
+ 
+ // ...
+		</script>
 </head>
 <body>
 	<header>			
@@ -43,5 +51,18 @@
 			</nav>			
 		</header>
 <%= yield %>
+		<footer>
+      <div id="footer" class="center-block text-center">
+        <hgroup>
+          <h3 class="courgette">Continua realizando negocios de éxito con Factura Inteligente.</h3> 
+          <h4 class="letracrema" title="LLamanos">01 800 288 1000 <i class="fa fa-commenting"></i></h4>
+        </hgroup>
+        <ul style="list-style-type: none">
+          <li><strong><small>Opción 2</small></strong> Soporte técnico y activaciones</li>
+          <li><strong><small>Extención: 8005, 8009</small></strong> Atención a distribuidores</li>
+        </ul>
+        <img src="/assets/giiff.gif" alt="responsive gif" width="180px" height="150px;">
+      </div>      
+    </footer>
 </body>
 </html>
